@@ -1,3 +1,32 @@
+$(document).ready(function() {
+  
+var hours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
+
+  for (var i = 0; i < hours.length; i++) {
+
+    var hourDiv = $("<div>");
+
+    hourDiv.addClass("description time-block row hour");
+
+    hourDiv.attr("data-hour", hours[i]);
+
+    hourDiv.text(hours[i]);
+
+    $("timeDiv").append(hourDiv);
+
+    console.log(hourDiv);
+  }
+});
+
+
+
+
+var todaysDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+
+var dateDisplay = $("#currentDay");
+
+
+$(dateDisplay).text(todaysDate);
 // i am using a planner to schedule my day
 
 //when i click start display said planner
