@@ -6,17 +6,36 @@ var hours = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 
     var hourDiv = $("<div>");
 
-    hourDiv.addClass("description time-block row hour");
+    hourDiv.addClass("time-block row hour");
 
     hourDiv.attr("data-hour", hours[i]);
 
     hourDiv.text(hours[i]);
 
-    $("timeDiv").append(hourDiv);
+    $("#timeDiv").append(hourDiv);
 
     console.log(hourDiv);
+    
+    function displayColors () {
+      
+      //if hour has passed display past class
+       if (moment(todaysDate).isBefore(hours)) {
+         hourDiv.addClass("past");
+       } else if (moment(todaysDate).isSame(hours)) {
+         hourDiv.addClass("present");
+       } else if (moment(todaysDate).isAfter(hours)) {
+         hourDiv.addClass("future");
+       }
+      //if hour is present display present class
+
+      //if hour is future display future class
+  
+    };
+
+    displayColors();
+
   }
-});
+
 
 
 
@@ -27,6 +46,7 @@ var dateDisplay = $("#currentDay");
 
 
 $(dateDisplay).text(todaysDate);
+});
 // i am using a planner to schedule my day
 
 //when i click start display said planner
