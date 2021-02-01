@@ -2,8 +2,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #ffffff
+  background-color: #ffffff11
   
+}
+
+h1 {
+  text-shadow: #06AED5;
+  text-decoration: #ffffff11;
 }
 
 textarea{
@@ -31,6 +36,7 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  font-weight: bolder;
 }
 
 .row {
