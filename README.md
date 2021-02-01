@@ -18,7 +18,7 @@ INTRODUCTION
 
 A calendar application that allows a user to save events for each hour of the work day.
 
-Image of site: assets\site-screenshot.png
+Image of site: https://github.com/aarongermaine/work_day_scheduler/blob/main/assets/site-screenshot.png
 
 
 REQUIREMENTS
@@ -28,7 +28,8 @@ REQUIREMENTS
 
 2.) The latest version of that browser
 
-3.) Copy the following link into browser:
+3.) Copy the following link into browser: 
+https://aarongermaine.github.io/work_day_scheduler/
 
 
 INSTALLATION
